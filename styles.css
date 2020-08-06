@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Data;
+    src: url(./src/Datalegreya-Thin.otf);
+}
+
+@font-face {
+    font-family: TT-Moons;
+    src: url(./src/TT-Moons-Thin-Italic-DEMO.otf);
+}
+
+@media (max-width: 600px) {
+    #icon-container {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .icons {
+        height: 50px;
+        flex: 0 0 50%;
+        margin: 5px;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    .icons:hover {
+        transform: scale(1.5);
+    }
+    .icons:hover+.icon-names {
+        opacity: 1;
+        transition: opacity 0.1s linear;
+    }
+    .icon-names {
+        opacity: 0;
+        font-family: Data;
+        font-size: 15px;
+    }
+}
+
+body {
+    background-color: #EDEDED;
+    text-align: center;
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#display-img {
+    height: 200px;
+}
+
+#name {
+    margin-top: 50px;
+    font-family: Data;
+    font-size: 600%;
+}
+
+#skills {
+    font-family: TT-Moons;
+    font-size: 200%;
+    margin-top: -10px;
+}
+
+@media (min-width: 600px) {
+    #icon-container {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .icons {
+        height: 50px;
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    .icons:hover {
+        filter: grayscale(0%);
+        transform: scale(1.5);
+    }
+    .icons:hover+.icon-names {
+        opacity: 1;
+        transition: opacity 0.1s linear;
+    }
+    .icon-names {
+        opacity: 0;
+        font-family: Data;
+        font-size: 15px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
