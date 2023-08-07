@@ -1,5 +1,7 @@
 html, body{
-    color: black !important;
+    color: #FAFAFA !important;
+    background-color: #263238;
+    scroll-behavior: smooth;
 }
 
 .thin{
@@ -25,6 +27,10 @@ html, body{
     font-size: 2rem;
 }
 
+.small-intro{
+    font-size: 1.5rem;
+}
+
 .button {
     color: white !important;
     background-color:rgb(100, 158, 100) !important;
@@ -35,3 +41,67 @@ html, body{
     margin-right: 1rem;
     cursor: pointer;
 }
+
+
+/* NEW */
+.animate{
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+}
+
+section {
+    min-height: 70vh;
+}
+
+.navbar {
+    background-color: #192227 !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    justify-content: center !important;
+}
+
+.navbar > a {
+    margin: 20px !important;
+}
+
+.navbar-item{
+    color: #37474F !important;
+}
+
+.navbar-item:hover{
+    color: white !important;
+    background-color: #192227 !important;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size:larger;
+}
+
+.title-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.icon-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    grid-auto-rows: 100px;
+    justify-content: center;
+}
+
+.review-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 5fr 5fr 5fr;
+    justify-content: center;
+}
+
+.checked {
+    color: orange;
+  }
