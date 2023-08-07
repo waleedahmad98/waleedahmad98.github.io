@@ -2,6 +2,7 @@ html, body{
     color: #FAFAFA !important;
     background-color: #263238;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .thin{
@@ -104,4 +105,4 @@ p{
 
 .checked {
     color: orange;
-  }
+}
