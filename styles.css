@@ -91,7 +91,7 @@ p{
 .icon-grid{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-auto-rows: 100px;
     justify-content: center;
 }
@@ -99,7 +99,7 @@ p{
 .review-grid{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }
 
@@ -113,15 +113,12 @@ p{
     padding:0;
     box-sizing: border-box;
 }
-body{
-    overflow: hidden;
-}
+.container { padding-left: 1rem; padding-right: 1rem; }
 .star-section{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 70vh;
+    overflow: hidden;
     background-size: cover;
 }
 
@@ -204,4 +201,51 @@ body{
     left: initial;
     animation-delay: 0.75s;
     animation-duration: 2.25s;
+}
+
+/* Responsive typography and layout */
+@media (max-width: 1024px) {
+    .intro { font-size: 3rem; }
+    .sub-intro { font-size: 1.6rem; }
+    .small-intro { font-size: 1.3rem; }
+    .navbar > a { margin: 14px !important; }
+}
+
+@media (max-width: 768px) {
+    .intro { font-size: 2.6rem; }
+    .sub-intro { font-size: 1.4rem; }
+    .small-intro { font-size: 1.2rem; }
+
+    section { min-height: auto; }
+    .columns { margin-top: 1rem; }
+
+    /* Review cards: 2 columns on tablets */
+    .review-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Navbar spacing */
+    .navbar > a { margin: 10px !important; }
+
+    /* Hero image override inline height */
+    .star-section img[style*="height:"] { height: auto !important; width: 100% !important; }
+}
+
+@media (max-width: 480px) {
+    .intro { font-size: 2.1rem; }
+    .sub-intro { font-size: 1.2rem; }
+    .small-intro { font-size: 1.05rem; }
+
+    /* Review cards: single column on phones */
+    .review-grid { grid-template-columns: 1fr; }
+
+    /* Navbar tighter spacing */
+    .navbar > a { margin: 8px !important; }
+
+    /* Center hero buttons on mobile */
+    .button.mt-5 { display: inline-block; margin-left: 0 !important; }
+
+    /* Ensure images don't overflow */
+    .columns img { max-height: 300px; object-fit: cover; }
+
+    /* Reduce excessive margins */
+    .ml-3 { margin-left: 0 !important; }
 }
