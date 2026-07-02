@@ -1,490 +1,327 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Waleed Ahmad</title>
+    <title>Waleed Ahmad — Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="app.js"></script>
 </head>
 
 <body>
-    <div>
-        <section class="container star-section">
-            <span class="sspan"></span>
-            <span class="sspan"></span>
-            <span class="sspan"></span>
-            <span class="sspan"></span>
-            <span class="sspan"></span>
-            <span class="sspan"></span>
-            
-            <div class="columns" style="
-                z-index: 1000;">
-                <div class="column is-half">
-                    <div class="bold intro ml-3 animate" style="
-                margin-top: 7rem !important;
-                transition: 1s;
-                transition-delay: 0.1s;
-              ">
-                        Hello.
-                    </div>
-                    <div class="animate" style="transition: 1s; transition-delay: 0.2s">
-                        <div class="thin intro ml-3">my name is</div>
-                        <div class="bold intro ml-3">Waleed Ahmad.</div>
-                    </div>
-                    <div class="medium-bold sub-intro ml-3 animate" style="
-                margin-top: 2rem !important;
-                transition: 1s;
-                transition-delay: 0.4s;
-              ">
-                        <span class="thin">I am a </span> full stack developer.
-                    </div>
-                    <button class="button mt-5 thin ml-3 animate" style="font-size: large; transition: 1s;
-                        transition-delay: 0.1s;
-                        justify-self: center;"
-                        onclick="window.open('src/CV-Waleed Ahmad.pdf','_blank');">
-                        View CV
-                    </button>
-                    <button class="button mt-5 thin animate" style="font-size: large; transition: 1s;
-                        transition-delay: 0.1s;
-                        justify-self: center;"
-                        onclick="window.open('mailto:w.ahmad1024@gmail.com')">
-                        Contact Me
-                    </button>
-                </div>
-                <div class="column is-half">
-                    <div class="bold intro ml-3 animate" style="
-                        margin-top: 7rem !important;
-                        transition: 1s;
-                        transition-delay: 0.1s;
-                        justify-self: center;
-                        position: relative;">
-                    <img src="src/Me.JPG" style="border-radius: 25px; height: 400px;"/>
+
+    <!-- Sticky Top Nav -->
+    <nav class="top-nav" id="topNav">
+        <div class="nav-links">
+            <a href="#portfolio">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#links">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-grid">
+            <div class="hero-text animate" style="transition-delay: 0.1s;">
+                <div class="hero-greeting animate" style="transition-delay: 0.15s;">Hello, I'm</div>
+                <h1 class="hero-name animate" style="transition-delay: 0.25s;">Waleed Ahmad.</h1>
+                <div class="hero-title animate" style="transition-delay: 0.35s;">Full Stack Developer</div>
+                <p class="hero-bio animate" style="transition-delay: 0.45s;">
+                    I build high-performance web applications, integrations, and automation tools. Focused on clean architecture, great UX, and shipping things that actually work.
+                </p>
+                <div class="hero-actions animate" style="transition-delay: 0.55s;">
+                    <button class="btn-primary" onclick="window.open('src/CV-Waleed Ahmad.pdf','_blank');">View CV</button>
+                    <button class="btn-secondary" onclick="window.open('mailto:w.ahmad1024@gmail.com')">Contact Me</button>
                 </div>
             </div>
-        </section>
-
-        <section style="background-color: #192227 !important">
-            <nav class="navbar is-flex-mobile" style="margin-top: 3%;">
-                <a class="navbar-item" href="#portfolio"> PORTFOLIO </a>
-                <a class="navbar-item" href="#reviews"> REVIEWS </a>
-                <a class="navbar-item" href="#links"> LINKS </a>
-            </nav>
-
-
-            <section style="margin: 0 auto; max-width: 90%; margin-bottom: 10%;" id="portfolio">
-                <div class="section-header bold mb-5" style="justify-content: center;">
-                    PERSONAL PROJECTS
+            <div class="hero-photo animate" style="transition-delay: 0.3s;">
+                <div class="photo-ring">
+                    <img src="src/profile.jpg" alt="Waleed Ahmad" />
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <h1 class="bold sub-intro animate" style="transition: 1s; transition-delay: 0.2s">
-                    BLOCKCHAIN BASED DIGITAL IDENTITY MANAGEMENT
-                </h1>
-                <div class="columns mt-5">
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <img src="https://user-images.githubusercontent.com/60568107/178979150-7485831a-e6e0-4a42-972a-499d995b8001.jpg"
-                            style="border-radius: 10px" />
-                    </div>
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            The Digital Identity Management System (DIMS) is a blockchain
-                            based application aimed to provide secure method of storing and
-                            sharing digital credentials, certificates and degrees. It
-                            utilizes decentralized networks to eliminate storage of
-                            important credentials on vulnerable servers that are prone to
-                            hijacking and hacking. The blockchain architecture makes sure
-                            that the credentials are tamper-proof by generating Non-fungible
-                            tokens of the credentials. It uses smart contracts writen in clarity and is built on
-                            <b>Stacks Blockchain</b>, <b>Node.js</b> and
-                            <b>React Framework</b>, paired with <b>Gaia</b> as the cloud
-                            provider for storing secured credentials.
-                        </p>
-                    </div>
-                </div>
+    <!-- Skills Section -->
+    <section class="dark-section" id="skills">
+        <div class="section-container">
+            <h2 class="section-heading animate">Technologies</h2>
+            <div class="skills-grid animate" style="transition-delay: 0.2s;">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Supabase</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Stacks Blockchain</span>
+                <span class="skill-tag">.NET / WPF</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Electron</span>
+                <span class="skill-tag">Android (Java)</span>
+            </div>
+        </div>
+    </section>
 
-                <h1 class="bold sub-intro animate" style="transition: 1s; transition-delay: 0.2s">
-                    ODABASH CATALOG
-                </h1>
-                <div class="columns mt-5">
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            A Next.js application I kickstarted to manage a large catalog of products and stock across locations, with
-                            scheduled syncs from Fishbowl/DSCO into Supabase. It provides fast filtering and size-system views,
-                            approval and sales-order flows, and rich export tooling: Excel (with and without pictures), CSV, PDF, plus
-                            audit emails for compliance. Cron endpoints keep inventory fresh and prune anomalies, while server actions
-                            and route handlers power secure operations, checkout, and buyers’ matrix reports.
-                        </p>
-                    </div>
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <img src="src/MO2.png"
-                            style="border-radius: 10px" />
-                    </div>
-                </div>
+    <!-- Portfolio Section -->
+    <section class="dark-section" id="portfolio">
+        <div class="section-container">
+            <h2 class="section-heading animate">Projects</h2>
 
-                <h1 class="bold sub-intro animate" style="transition: 1s; transition-delay: 0.2s">
-                    RANOREX - Azure DevOps Integration
-                </h1>
-                <div class="columns mt-5">
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <img src="src/Rano.png"
-                            style="border-radius: 10px" />
-                    </div>
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            I expanded the automation and testing framework by introducing Azure DevOps integration to support
-                            better test case management and reporting. I worked extensively with .NET Framework WPF and the Azure
-                            DevOps API, building tools that enabled seamless synchronization between test automation and DevOps
-                            pipelines. These contributions not only reduced manual QA overhead but also enhanced the overall efficiency and reliability of our testing processes
-                        </p>
-                        <button class="button mt-5 thin" style="font-size: large"
-                            onclick="window.open('https\:\/\/support.ranorex.com/hc/en-us/articles/41713050461585-Map-Ranorex-tests-to-Azure-DevOps-Test-Cases')">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
+            <div class="project-grid">
 
-                <h1 class="bold sub-intro animate" style="transition: 1s; transition-delay: 0.2s">
-                    AUTOSTRUCTURE
-                </h1>
-                <div class="columns mt-5">
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            I contributed to the development of a Next.js App Router application built with TypeScript, Supabase, and
-                            AWS S3. My work focused on stabilizing and improving the existing codebase by resolving critical file upload
-                            issues and fixing integration problems that affected client workflows. In addition, I implemented several UX
-                            enhancements, improving navigation, reliability, and responsiveness, which resulted in a smoother experience
-                            for end users and increased adoption of the platform.
-                        </p>
+                <div class="project-card animate" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <img src="https://user-images.githubusercontent.com/60568107/178979150-7485831a-e6e0-4a42-972a-499d995b8001.jpg" alt="DIMS" />
                     </div>
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <img src="src/AS.png"
-                            style="border-radius: 10px" />
-                    </div>
-                </div>
-
-                <h1 class="bold sub-intro animate"  style="transition: 1s; transition-delay: 0.2s">
-                    WOODLAND - SCRAPING BASED SOFTWARE LAUNCHER
-                </h1>
-                <div class="columns mt-5">
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <img src="https://user-images.githubusercontent.com/60568107/131877025-d320d154-100e-443f-92c8-3a9eb1cc3691.png"
-                            style="border-radius: 10px" />
-                    </div>
-                    <div class="column is-half animate"
-                        style="text-align: left; transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            Woodland is an electron application that stores currently
-                            installed software on your personal computer. The application
-                            allows faster access to your programs so that they can be launched
-                            without opening their folder. The launcher overlays on your
-                            current screen and showcases the installed software which can be
-                            launched with one click.
-                        </p>
-                    </div>
-                </div>
-
-                                <h1 class="bold sub-intro animate" style="transition: 1s; transition-delay: 0.2s">WALL PANTHER - ANDROID
-                    APPLICATION</h1>
-                <div class="columns mt-5">
-                    <div class="column is-half animate"
-                        style="text-align: right; transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            Wall Panther is a wallpaper app which lets you view, download,
-                            and set wallpapers on both home and lock screen. The app takes
-                            wallpapers from popular mobile wallpaper subreddits on Reddit,
-                            and puts them in one single place while giving credits to the
-                            original artists of the wallpaper. It is built using
-                            <b>Java based Android</b> and is available on the Google Play
-                            Store.
-                        </p>
-                    </div>
-                    <div class="column is-half is-flex-desktop animate" style="justify-content: space-evenly; transition: 1s; transition-delay: 0.2s">
-                        <img src="https://user-images.githubusercontent.com/60568107/131874999-3ed78036-6a41-4904-8d07-7f876019f194.jpg"
-                            style="border-radius: 10px" />
-                        <img src="https://user-images.githubusercontent.com/60568107/131875002-6f6174a7-7652-48d1-b337-e4c9fcab2597.jpg"
-                            style="border-radius: 10px" />
-                        <img src="https://user-images.githubusercontent.com/60568107/131875005-c596cce5-bd98-4c3b-a8f0-088a73d099bc.jpg"
-                            style="border-radius: 10px" />
-                    </div>
-                </div>
-
-
-                <h1 class="bold sub-intro animate">
-                    OTHER PROJECTS
-                </h1>
-                <div class="columns mt-5">
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <h2 class="small-intro bold">CONTEXT BASED LEARNING WITH OPEN AI</h2>
-                    </div>
-                    <div class="column is-half animate"
-                        style="text-align: left; transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            A research project focused around Chat-GPTs APIs utilizing a much smaller dataset of
-                            products. This AI project learns a set of products and their ratings from amazon. Chat-GPTs
-                            APIs are then used to respond on questions related to these products in this context only,
-                            rather than responding on them generally. The intended research about customizing datasets
-                            and Open AI proved to be successful.
-                        </p>
-                    </div>
-                </div>
-                <div class="columns mt-5">
-                    <div class="column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <h2 class="small-intro bold">PropsKit</h2>
-                    </div>
-                    <div class="column is-half animate"
-                        style="text-align: left; transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            A realtime data scraper designed to work headless through Amazon AWS cloud instances to fetch data from
-                            popular real estate websites including Zillow, Trulia, Realtor and dashboard them for a better experience
-                            and ease of finding better deals. The project was developed with Node using Puppeteer, Cheerio for parsing
-                            the data and React for the front end. Amazon EC2 was utilized for deployments and running the service.
-                        </p>
-                    </div>
-                </div>
-                <div class="columns mt-5">
-                    <div class="small-intro column is-half animate" style="transition: 1s; transition-delay: 0.2s">
-                        <h2 class="bold">DRAFTKINGS AIO DATA TOOL</h2>
-                    </div>
-                    <div class="column is-half animate"
-                        style="text-align: left; transition: 1s; transition-delay: 0.2s">
-                        <p>
-                            A set of tools based on multiple data scraping methods, which collect and build a database
-                            of most information related to DraftKings games including
-                            NFL, MLB and NBA. The tools helps generate player rankings and other information helpful in
-                            judging player performance and other criteria required.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep3" viewBox="0 0 1600 100" style="display: block;" data-height="100">
-                <path class="" style="opacity: 1;fill: #273a4c;" d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"></path>
-                <path class="" style="opacity: 1;fill: #2a3f54;" d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z"></path>
-                <path class="" style="fill: #192227;" d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"></path></svg>
-            
-            
-            <section style="margin: 0 auto; max-width: 90%; text-align: center; margin-top: 10%; margin-bottom: 10%;" id="reviews">
-                <div class="section-header bold mb-5" style="justify-content: center;">
-                    CLIENT REVIEWS
-                </div>
-                <div>
-                    <img src="src/fiverr.png" style="border-radius: 5px;"/>
-                </div>
-                <div class="review-grid is-flex-mobile is-flex-direction-column" style="text-align: left;">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="content">
-                                “A pleasure to work with a great software developer. Perfect code, does exactly what I
-                                asked for. Fast delivery & easy to work with. Thank you so much!”
-                            </p>
-                            <p class="subtitle">
-                                nvl1600, United States
-                            </p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                    <div class="project-body">
+                        <h3 class="project-title">Blockchain Digital Identity Management</h3>
+                        <p class="project-desc">Decentralized app for secure storage and sharing of digital credentials using NFTs and Clarity smart contracts on Stacks Blockchain, eliminating vulnerable centralized servers.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Stacks Blockchain</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Clarity</span>
+                            <span class="tech-tag">Gaia</span>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="content">
-                                “wahmad1024 went above and beyond in his Web Scraping efforts to deliver exactly what I was looking for. Everything that I requested was delivered and wahmad1024 event suggested some improvements. He has a native level of fluency in english which made communication simple. I would happily recommend to anybody.”
-                            </p>
-                            <p class="subtitle">
-                                stephenmcmah139, Australia
-                            </p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="content">
-                                “I'm a repeat customer. Very happy with the immediate turnaround. Python script did exactly what I want. Thank you!”
-                            </p>
-                            <p class="subtitle">
-                                nvl1600, United States
-                            </p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="content">
-                                “Over the top professional! Very kind, helpful, with excellent skills in explaining and understanding the client's needs. It's the beginning of a long collaboration! I recommend him to everyone!”
-                            </p>
-                            <p class="subtitle">
-                                albertodianin, Italy
-                            </p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="content">
-                                “Knows his stuff, fast and accurate. He is the best!”
-                            </p>
-                            <p class="subtitle">
-                                guytort, United States
-                            </p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="content">
-                                “Brilliant, above expectations by far, thanks and look forward to working with you again :)”
-                            </p>
-                            <p class="subtitle">
-                                username42, United Kingdom
-                            </p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                </div> 
-                <button class="button is-success is-outlined thin mt-5 ml-3" style="font-size: large;"
-                        onclick="window.open('https://www.fiverr.com/wahmad1024','_blank');">
-                        See More On Fiverr
-                    </button>
-            </section>
-
-            <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep3" viewBox="0 0 1600 100" style="display: block;" data-height="100">
-                <path class="" style="opacity: 1;fill: #273a4c;" d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"></path>
-                <path class="" style="opacity: 1;fill: #2a3f54;" d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z"></path>
-                <path class="" style="fill: #192227;" d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"></path></svg>
-            
-
-            <section style="margin: 0 auto; max-width: 90%; margin-top: 5%; text-align: center; margin-top: 10%;" id="links">
-                <div class="title-header bold mb-5" style="justify-content: center;">
-                    FIND ME ON
                 </div>
-                <div class="icon-grid">
-                    <!-- Github -->
-                    <div class="link" onclick="window.open('https://www.github.com/waleedahmad98', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.6,5,2.5,9.3,6.9,10.7v-2.3c0,0-0.4,0.1-0.9,0.1c-1.4,0-2-1.2-2.1-1.9 c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1c0.4,0,0.7-0.1,0.9-0.2 c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6c0,0,1.4,0,2.8,1.3 C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3 c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v3.3c4.1-1.3,7-5.1,7-9.5C22,6.1,16.9,1.4,10.9,2.1z">
-                            </path>
-                        </svg>
-                    </div>
-                    <!-- Linkedin -->
-                    <div class="link" onclick="window.open('https://www.linkedin.com/in/wahmad1024', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M21,3H3v18h18V3z M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2 c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302 s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10 C17.023,10,18,10.977,18,13.174V17z">
-                            </path>
-                        </svg>
-                    </div>
-                    <!-- Fiverr -->
-                    <div class="link" onclick="window.open('https://www.fiverr.com/wahmad1024', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M20.112 10.776v-.738h-1.401l-.616-.011c-.526 0-.886.346-1.027.749v-.738h-1.568v4.787h1.568v-1.026V12.21c0-.477.387-.864.864-.864h.611v3.48h1.568v-1.026V12.21c0-.477.387-.864.864-.864h.779v-1.308l-.616-.011C20.613 10.027 20.254 10.374 20.112 10.776zM8.952 10.138L8.111 12.905 7.269 10.138 5.701 10.138 7.405 14.925 7.496 14.925 8.725 14.925 8.817 14.925 10.52 10.138zM2.544 10.138V9.819c0-.279.227-.506.506-.506h.99V8H2.68C1.739 8 .976 8.763.976 9.704v.434H.059v1.269h.917v3.518h1.568v-3.518H4.04v3.518h1.568v-3.518-1.269H4.04 2.544zM12.695 10.074h-.191c-1.285 0-2.326 1.041-2.326 2.326v.263c0 1.285 1.041 2.326 2.326 2.326h.424c.88 0 1.633-.543 1.942-1.312l-1.383-.404c0 0-.166.474-.742.474-.651 0-.997-.357-1.042-.761h0v-.002c-.003-.029-.005-.059-.005-.089h1.769 1.555V12.4C15.021 11.115 13.98 10.074 12.695 10.074zM11.699 11.972c.019-.43.373-.774.808-.774h.15c.435 0 .789.343.808.774H11.699zM23.025 13.086c-.539 0-.975.437-.975.975 0 .539.437.975.975.975.539 0 .975-.437.975-.975C24 13.522 23.563 13.086 23.025 13.086z">
-                            </path>
-                        </svg>
-                    </div>
-                    <!-- Discord -->
-                    <div class="link"
-                        onclick="window.open('https://www.discordapp.com/users/360859848704786442', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M19.952,5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392,0.097-0.474,0.281 c-0.006,0.012-0.072,0.163-0.145,0.398c1.259,0.212,2.806,0.64,4.206,1.509c0.224,0.139,0.293,0.434,0.154,0.659 c-0.09,0.146-0.247,0.226-0.407,0.226c-0.086,0-0.173-0.023-0.252-0.072C15.584,5.38,12.578,5.305,12,5.305S8.415,5.38,6.011,6.872 c-0.225,0.14-0.519,0.07-0.659-0.154c-0.14-0.225-0.07-0.519,0.154-0.659c1.4-0.868,2.946-1.297,4.206-1.509 c-0.074-0.236-0.14-0.386-0.145-0.398C9.484,3.968,9.294,3.852,9.092,3.872c-0.127,0.01-3.139,0.269-5.069,1.822 C3.015,6.625,1,12.073,1,16.783c0,0.083,0.022,0.165,0.063,0.237c1.391,2.443,5.185,3.083,6.05,3.111c0.005,0,0.01,0,0.015,0 c0.153,0,0.297-0.073,0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675 c0.175-0.198,0.476-0.217,0.674-0.043c0.029,0.026,2.248,1.909,6.612,1.909c4.372,0,6.591-1.891,6.613-1.91 c0.198-0.172,0.5-0.154,0.674,0.045c0.174,0.198,0.155,0.499-0.042,0.673c-0.07,0.062-1.275,1.096-3.634,1.706l0.875,1.202 c0.09,0.124,0.234,0.197,0.387,0.197c0.005,0,0.01,0,0.015,0c0.865-0.027,4.659-0.667,6.05-3.111 C22.978,16.947,23,16.866,23,16.783C23,12.073,20.985,6.625,19.952,5.672z M8.891,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913s1.674,0.857,1.674,1.913S9.816,14.87,8.891,14.87z M15.109,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913c0.924,0,1.674,0.857,1.674,1.913S16.033,14.87,15.109,14.87z">
-                            </path>
-                        </svg>
-                    </div>
-                    <!-- Facebook -->
-                    <div class="link" onclick="window.open('https://www.facebook.com/waleed.ahmad.90', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M21,3H3v18h9.621v-6.961h-2.343v-2.725h2.343V9.309c0-2.324,1.421-3.591,3.495-3.591c0.699-0.002,1.397,0.034,2.092,0.105 v2.43h-1.428c-1.13,0-1.35,0.534-1.35,1.322v1.735h2.7l-0.351,2.725h-2.365V21H21V3z">
-                            </path>
-                        </svg>
-                    </div>
-                    <!-- Instagram -->
-                    <div class="link" onclick="window.open('https://www.instagram.com/waleedahmad98', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z">
-                            </path>
-                        </svg>
-                    </div>
-                    <!-- Behance -->
-                    <div class="link" onclick="window.open('https://www.behance.com/waleedahmad5', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 30 30" style=" fill:#f7f7f7;">
-                            <path
-                                d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 17.5 11 L 20.056641 11 C 20.332641 11 20.556641 11.224 20.556641 11.5 C 20.556641 11.776 20.332641 12 20.056641 12 L 17.5 12 C 17.224 12 17 11.776 17 11.5 C 17 11.224 17.224 11 17.5 11 z M 8.9199219 11.384766 L 11.705078 11.384766 C 13.349078 11.384766 14.330078 12.189047 14.330078 13.498047 C 14.330078 14.396047 13.665875 15.179594 12.796875 15.308594 L 12.796875 15.414062 C 13.918875 15.496063 14.734375 16.341594 14.734375 17.433594 C 14.735375 18.918594 13.613688 19.859375 11.804688 19.859375 L 8.9199219 19.859375 C 8.4119219 19.859375 8 19.447453 8 18.939453 L 8 12.304688 C 8 11.796688 8.4119219 11.384766 8.9199219 11.384766 z M 9.7734375 12.740234 L 9.7734375 14.896484 L 11.105469 14.896484 C 12.063469 14.897484 12.585937 14.503266 12.585938 13.822266 C 12.585938 13.147266 12.099906 12.740234 11.253906 12.740234 L 9.7734375 12.740234 z M 18.962891 13.240234 C 20.871891 13.240234 21.998047 14.456719 21.998047 16.511719 L 21.998047 17.033203 L 17.554688 17.033203 L 17.554688 17.121094 C 17.577687 18.084094 18.142156 18.683594 19.035156 18.683594 C 19.710156 18.683594 20.173469 18.443625 20.355469 18.015625 L 21.947266 18.015625 C 21.689266 19.237625 20.572328 20 18.986328 20 C 17.013328 20 15.851563 18.754344 15.851562 16.652344 C 15.851562 14.544344 17.036891 13.240234 18.962891 13.240234 z M 18.970703 14.550781 C 18.177703 14.550781 17.618547 15.101406 17.560547 15.941406 L 20.320312 15.941406 C 20.284313 15.084406 19.768703 14.550781 18.970703 14.550781 z M 9.7734375 16.095703 L 9.7734375 18.503906 L 11.353516 18.503906 C 12.375516 18.503906 12.927734 18.07325 12.927734 17.28125 C 12.927734 16.50525 12.3575 16.095703 11.3125 16.095703 L 9.7734375 16.095703 z">
-                            </path>
-                        </svg>
-                    </div>
 
-                    <!-- Steam -->
-                    <div class="link" onclick="window.open('https://steamcommunity.com/id/WalMad/', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M 12 2 C 6.82 2 2.5507812 5.95 2.0507812 11 L 7.0195312 13.759766 C 7.5495313 13.289766 8.24 13 9 13 C 9.03 13 9.0500781 13.009766 9.0800781 13.009766 C 9.6800781 12.089766 10.449766 10.919609 11.009766 10.099609 C 11.009766 10.059609 11 10.03 11 10 C 11 8.93 11.419922 7.9299219 12.169922 7.1699219 C 13.679922 5.6599219 16.320078 5.6599219 17.830078 7.1699219 C 18.580078 7.9299219 19 8.93 19 10 C 19 11.07 18.580078 12.070078 17.830078 12.830078 C 17.070078 13.580078 16.07 14 15 14 C 14.97 14 14.930391 13.990234 14.900391 13.990234 C 14.080391 14.550234 12.910234 15.319922 11.990234 15.919922 C 11.990234 15.949922 12 15.97 12 16 C 12 17.66 10.66 19 9 19 C 7.34 19 6 17.66 6 16 C 6 15.83 6.0107812 15.66 6.0507812 15.5 L 2.0898438 13.300781 C 2.7198438 18.210781 6.92 22 12 22 C 17.52 22 22 17.52 22 12 C 22 6.48 17.52 2 12 2 z M 6.0507812 15.5 L 8.5097656 16.869141 C 8.6697656 16.959141 8.83 17 9 17 C 9.35 17 9.6891406 16.810234 9.8691406 16.490234 C 10.139141 16.000234 9.9702344 15.390859 9.4902344 15.130859 L 7.0195312 13.759766 C 6.5095312 14.189766 6.1607813 14.81 6.0507812 15.5 z M 15 8 A 2 2 0 0 0 15 12 A 2 2 0 0 0 15 8 z">
-                            </path>
-                        </svg>
+                <div class="project-card animate" style="transition-delay: 0.2s;">
+                    <div class="project-img">
+                        <img src="src/MO2.png" alt="Odabash Catalog" />
                     </div>
-                    <!-- Spotify -->
-                    <div class="link"
-                        onclick="window.open('https://open.spotify.com/user/5p9cwtad1zhnngneojjoqontd', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 50 50" style=" fill:#f7f7f7;">
-                            <path
-                                d="M25.009,1.982C12.322,1.982,2,12.304,2,24.991S12.322,48,25.009,48s23.009-10.321,23.009-23.009S37.696,1.982,25.009,1.982z M34.748,35.333c-0.289,0.434-0.765,0.668-1.25,0.668c-0.286,0-0.575-0.081-0.831-0.252C30.194,34.1,26,33,22.5,33.001 c-3.714,0.002-6.498,0.914-6.526,0.923c-0.784,0.266-1.635-0.162-1.897-0.948s0.163-1.636,0.949-1.897 c0.132-0.044,3.279-1.075,7.474-1.077C26,30,30.868,30.944,34.332,33.253C35.022,33.713,35.208,34.644,34.748,35.333z M37.74,29.193 c-0.325,0.522-0.886,0.809-1.459,0.809c-0.31,0-0.624-0.083-0.906-0.26c-4.484-2.794-9.092-3.385-13.062-3.35 c-4.482,0.04-8.066,0.895-8.127,0.913c-0.907,0.258-1.861-0.272-2.12-1.183c-0.259-0.913,0.272-1.862,1.184-2.12 c0.277-0.079,3.854-0.959,8.751-1c4.465-0.037,10.029,0.61,15.191,3.826C37.995,27.328,38.242,28.388,37.74,29.193z M40.725,22.013 C40.352,22.647,39.684,23,38.998,23c-0.344,0-0.692-0.089-1.011-0.275c-5.226-3.068-11.58-3.719-15.99-3.725 c-0.021,0-0.042,0-0.063,0c-5.333,0-9.44,0.938-9.481,0.948c-1.078,0.247-2.151-0.419-2.401-1.495 c-0.25-1.075,0.417-2.149,1.492-2.4C11.729,16.01,16.117,15,21.934,15c0.023,0,0.046,0,0.069,0 c4.905,0.007,12.011,0.753,18.01,4.275C40.965,19.835,41.284,21.061,40.725,22.013z">
-                            </path>
-                        </svg>
-                    </div>
-                    <!-- Google Play -->
-                    <div class="link"
-                        onclick="window.open('https://play.google.com/store/apps/developer?id=WaleedAhmad98', '_blank')">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60"
-                            viewBox="0 0 24 24" style=" fill:#f7f7f7;">
-                            <path
-                                d="M 0.5 0 C 0.493 0.016 0.50920312 0.02615625 0.53320312 0.03515625 L 0.5 0 z M 5.4160156 2.328125 L 13.296875 10.535156 L 15.626953 8.109375 C 11.611953 5.838375 6.3020156 2.834125 5.4160156 2.328125 z M 3 2.625 L 3 21.332031 L 11.910156 11.978516 L 3 2.625 z M 17.423828 9.1269531 L 14.683594 11.978516 L 17.402344 14.810547 C 18.148344 14.388547 20.345875 13.182516 22.546875 11.978516 C 20.341875 10.755516 18.145828 9.5359531 17.423828 9.1269531 z M 13.296875 13.423828 L 5.4746094 21.566406 C 6.8216094 20.800406 11.797469 17.982172 15.605469 15.826172 L 13.296875 13.423828 z M 0.484375 23.972656 C 0.465375 23.979656 0.45303125 23.988 0.45703125 24 L 0.484375 23.972656 z">
-                            </path>
-                        </svg>
+                    <div class="project-body">
+                        <h3 class="project-title">Odabash Catalog</h3>
+                        <p class="project-desc">Enterprise catalog management with multi-location stock tracking, scheduled Fishbowl/DSCO syncs, approval workflows, and rich export tooling — Excel, CSV, PDF, and buyers' matrix reports.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">AWS S3</span>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </section>
-    </div>
+
+                <div class="project-card animate" style="transition-delay: 0.3s;">
+                    <div class="project-img">
+                        <img src="src/Rano.png" alt="Ranorex Azure DevOps" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Ranorex — Azure DevOps Integration</h3>
+                        <p class="project-desc">Extended Ranorex's automation framework with Azure DevOps integration, building bidirectional sync tools that reduced manual QA overhead and improved pipeline reliability.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">.NET / WPF</span>
+                            <span class="tech-tag">Azure DevOps API</span>
+                            <span class="tech-tag">C#</span>
+                        </div>
+                        <a class="project-link" href="https://support.ranorex.com/hc/en-us/articles/41713050461585-Map-Ranorex-tests-to-Azure-DevOps-Test-Cases" target="_blank">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="project-card animate" style="transition-delay: 0.4s;">
+                    <div class="project-img">
+                        <img src="src/AS.png" alt="AutoStructure" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">AutoStructure</h3>
+                        <p class="project-desc">Resolved critical file upload bugs and integration failures in a Next.js App Router platform, then shipped UX enhancements that improved navigation, reliability, and client adoption.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">AWS S3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate" style="transition-delay: 0.5s;">
+                    <div class="project-img">
+                        <img src="https://user-images.githubusercontent.com/60568107/131877025-d320d154-100e-443f-92c8-3a9eb1cc3691.png" alt="Woodland" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Woodland — Software Launcher</h3>
+                        <p class="project-desc">Electron desktop app that overlays on your screen to provide instant one-click access to all installed software, without navigating nested folder structures.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Electron</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card animate" style="transition-delay: 0.6s;">
+                    <div class="project-img project-img-multi">
+                        <img src="https://user-images.githubusercontent.com/60568107/131874999-3ed78036-6a41-4904-8d07-7f876019f194.jpg" alt="Wall Panther" />
+                        <img src="https://user-images.githubusercontent.com/60568107/131875002-6f6174a7-7652-48d1-b337-e4c9fcab2597.jpg" alt="Wall Panther" />
+                        <img src="https://user-images.githubusercontent.com/60568107/131875005-c596cce5-bd98-4c3b-a8f0-088a73d099bc.jpg" alt="Wall Panther" />
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Wall Panther — Android App</h3>
+                        <p class="project-desc">Wallpaper app aggregating top posts from Reddit wallpaper communities into one place, with download and dual-screen set functionality. Available on the Google Play Store.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Reddit API</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Other Projects -->
+            <h3 class="sub-section-heading animate" style="transition-delay: 0.1s;">Other Projects</h3>
+            <div class="other-projects animate" style="transition-delay: 0.2s;">
+                <div class="other-project-card">
+                    <h4>Context-Based Learning with OpenAI</h4>
+                    <p>Customized ChatGPT API to respond only within a specific Amazon product dataset — research project demonstrating domain-scoped AI using fine-tuned context.</p>
+                    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">OpenAI API</span></div>
+                </div>
+                <div class="other-project-card">
+                    <h4>PropsKit</h4>
+                    <p>Headless real-time scraper on AWS EC2 aggregating property listings from Zillow, Trulia, and Realtor into a unified React dashboard for deal comparison.</p>
+                    <div class="tech-tags"><span class="tech-tag">Node.js</span><span class="tech-tag">Puppeteer</span><span class="tech-tag">React</span><span class="tech-tag">AWS EC2</span></div>
+                </div>
+                <div class="other-project-card">
+                    <h4>DraftKings AIO Data Tool</h4>
+                    <p>Multi-method scraping suite building a live database of DraftKings game data across NFL, MLB, and NBA — powering player rankings and performance analytics.</p>
+                    <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Web Scraping</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <svg preserveAspectRatio="xMidYMax meet" class="wave-divider" viewBox="0 0 1600 100" style="display: block;" data-height="100">
+        <path style="opacity: 1;fill: #1a2730;" d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"></path>
+        <path style="opacity: 1;fill: #192227;" d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"></path>
+    </svg>
+
+    <!-- Reviews Section -->
+    <section class="darker-section" id="reviews">
+        <div class="section-container" style="text-align: center;">
+            <h2 class="section-heading centered animate">Client Reviews</h2>
+            <div class="fiverr-badge animate" style="transition-delay: 0.1s;">
+                <img src="src/fiverr.png" style="border-radius: 8px; max-width: 220px;" alt="Fiverr" />
+            </div>
+            <div class="review-grid animate" style="transition-delay: 0.2s; text-align: left;">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <p>"A pleasure to work with a great software developer. Perfect code, does exactly what I asked for. Fast delivery &amp; easy to work with. Thank you so much!"</p>
+                    <div class="reviewer">nvl1600 · United States</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <p>"Went above and beyond in his Web Scraping efforts. Everything was delivered and he even suggested improvements. Native-level English made communication simple. Would happily recommend."</p>
+                    <div class="reviewer">stephenmcmah139 · Australia</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <p>"I'm a repeat customer. Very happy with the immediate turnaround. Python script did exactly what I want. Thank you!"</p>
+                    <div class="reviewer">nvl1600 · United States</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <p>"Over the top professional! Very kind, helpful, with excellent skills in explaining and understanding the client's needs. It's the beginning of a long collaboration!"</p>
+                    <div class="reviewer">albertodianin · Italy</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <p>"Knows his stuff, fast and accurate. He is the best!"</p>
+                    <div class="reviewer">guytort · United States</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                    </div>
+                    <p>"Brilliant, above expectations by far, thanks and look forward to working with you again :)"</p>
+                    <div class="reviewer">username42 · United Kingdom</div>
+                </div>
+            </div>
+            <a class="btn-outline animate" style="transition-delay: 0.3s; display: inline-block; margin-top: 2.5rem;" href="https://www.fiverr.com/wahmad1024" target="_blank">See More on Fiverr →</a>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <svg preserveAspectRatio="xMidYMax meet" class="wave-divider-mid" viewBox="0 0 1600 100" style="display: block;" data-height="100">
+        <path style="opacity: 1;fill: #141d24;" d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"></path>
+        <path style="opacity: 1;fill: #0f1923;" d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"></path>
+    </svg>
+
+    <!-- Links Section -->
+    <section class="main-section" id="links">
+        <div class="section-container" style="text-align: center;">
+            <h2 class="section-heading centered animate">Find Me On</h2>
+            <div class="icon-grid animate" style="transition-delay: 0.2s;">
+                <div class="icon-link" onclick="window.open('https://www.github.com/waleedahmad98', '_blank')" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.6,5,2.5,9.3,6.9,10.7v-2.3c0,0-0.4,0.1-0.9,0.1c-1.4,0-2-1.2-2.1-1.9 c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1c0.4,0,0.7-0.1,0.9-0.2 c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6c0,0,1.4,0,2.8,1.3 C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3 c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v3.3c4.1-1.3,7-5.1,7-9.5C22,6.1,16.9,1.4,10.9,2.1z"/></svg>
+                    <span>GitHub</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://www.linkedin.com/in/wahmad1024', '_blank')" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21,3H3v18h18V3z M9,17H6.477v-7H9V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2 c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302 s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977C13.93,10.407,14.581,10,15.802,10 C17.023,10,18,10.977,18,13.174V17z"/></svg>
+                    <span>LinkedIn</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://www.fiverr.com/wahmad1024', '_blank')" title="Fiverr">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20.112 10.776v-.738h-1.401l-.616-.011c-.526 0-.886.346-1.027.749v-.738h-1.568v4.787h1.568v-1.026V12.21c0-.477.387-.864.864-.864h.611v3.48h1.568v-1.026V12.21c0-.477.387-.864.864-.864h.779v-1.308l-.616-.011C20.613 10.027 20.254 10.374 20.112 10.776zM8.952 10.138L8.111 12.905 7.269 10.138 5.701 10.138 7.405 14.925 7.496 14.925 8.725 14.925 8.817 14.925 10.52 10.138zM2.544 10.138V9.819c0-.279.227-.506.506-.506h.99V8H2.68C1.739 8 .976 8.763.976 9.704v.434H.059v1.269h.917v3.518h1.568v-3.518H4.04v3.518h1.568v-3.518-1.269H4.04 2.544zM12.695 10.074h-.191c-1.285 0-2.326 1.041-2.326 2.326v.263c0 1.285 1.041 2.326 2.326 2.326h.424c.88 0 1.633-.543 1.942-1.312l-1.383-.404c0 0-.166.474-.742.474-.651 0-.997-.357-1.042-.761h0v-.002c-.003-.029-.005-.059-.005-.089h1.769 1.555V12.4C15.021 11.115 13.98 10.074 12.695 10.074zM11.699 11.972c.019-.43.373-.774.808-.774h.15c.435 0 .789.343.808.774H11.699zM23.025 13.086c-.539 0-.975.437-.975.975 0 .539.437.975.975.975.539 0 .975-.437.975-.975C24 13.522 23.563 13.086 23.025 13.086z"/></svg>
+                    <span>Fiverr</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://www.discordapp.com/users/360859848704786442', '_blank')" title="Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19.952,5.672c-1.904-1.531-4.916-1.79-5.044-1.801c-0.201-0.017-0.392,0.097-0.474,0.281 c-0.006,0.012-0.072,0.163-0.145,0.398c1.259,0.212,2.806,0.64,4.206,1.509c0.224,0.139,0.293,0.434,0.154,0.659 c-0.09,0.146-0.247,0.226-0.407,0.226c-0.086,0-0.173-0.023-0.252-0.072C15.584,5.38,12.578,5.305,12,5.305S8.415,5.38,6.011,6.872 c-0.225,0.14-0.519,0.07-0.659-0.154c-0.14-0.225-0.07-0.519,0.154-0.659c1.4-0.868,2.946-1.297,4.206-1.509 c-0.074-0.236-0.14-0.386-0.145-0.398C9.484,3.968,9.294,3.852,9.092,3.872c-0.127,0.01-3.139,0.269-5.069,1.822 C3.015,6.625,1,12.073,1,16.783c0,0.083,0.022,0.165,0.063,0.237c1.391,2.443,5.185,3.083,6.05,3.111c0.005,0,0.01,0,0.015,0 c0.153,0,0.297-0.073,0.387-0.197l0.875-1.202c-2.359-0.61-3.564-1.645-3.634-1.706c-0.198-0.175-0.217-0.477-0.042-0.675 c0.175-0.198,0.476-0.217,0.674-0.043c0.029,0.026,2.248,1.909,6.612,1.909c4.372,0,6.591-1.891,6.613-1.91 c0.198-0.172,0.5-0.154,0.674,0.045c0.174,0.198,0.155,0.499-0.042,0.673c-0.07,0.062-1.275,1.096-3.634,1.706l0.875,1.202 c0.09,0.124,0.234,0.197,0.387,0.197c0.005,0,0.01,0,0.015,0c0.865-0.027,4.659-0.667,6.05-3.111 C22.978,16.947,23,16.866,23,16.783C23,12.073,20.985,6.625,19.952,5.672z M8.891,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913s1.674,0.857,1.674,1.913S9.816,14.87,8.891,14.87z M15.109,14.87c-0.924,0-1.674-0.857-1.674-1.913 s0.749-1.913,1.674-1.913c0.924,0,1.674,0.857,1.674,1.913S16.033,14.87,15.109,14.87z"/></svg>
+                    <span>Discord</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://www.instagram.com/waleedahmad98', '_blank')" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"/></svg>
+                    <span>Instagram</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://www.behance.com/waleedahmad5', '_blank')" title="Behance">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 30 30" fill="currentColor"><path d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 17.5 11 L 20.056641 11 C 20.332641 11 20.556641 11.224 20.556641 11.5 C 20.556641 11.776 20.332641 12 20.056641 12 L 17.5 12 C 17.224 12 17 11.776 17 11.5 C 17 11.224 17.224 11 17.5 11 z M 8.9199219 11.384766 L 11.705078 11.384766 C 13.349078 11.384766 14.330078 12.189047 14.330078 13.498047 C 14.330078 14.396047 13.665875 15.179594 12.796875 15.308594 L 12.796875 15.414062 C 13.918875 15.496063 14.734375 16.341594 14.734375 17.433594 C 14.735375 18.918594 13.613688 19.859375 11.804688 19.859375 L 8.9199219 19.859375 C 8.4119219 19.859375 8 19.447453 8 18.939453 L 8 12.304688 C 8 11.796688 8.4119219 11.384766 8.9199219 11.384766 z M 9.7734375 12.740234 L 9.7734375 14.896484 L 11.105469 14.896484 C 12.063469 14.897484 12.585937 14.503266 12.585938 13.822266 C 12.585938 13.147266 12.099906 12.740234 11.253906 12.740234 L 9.7734375 12.740234 z M 18.962891 13.240234 C 20.871891 13.240234 21.998047 14.456719 21.998047 16.511719 L 21.998047 17.033203 L 17.554688 17.033203 L 17.554688 17.121094 C 17.577687 18.084094 18.142156 18.683594 19.035156 18.683594 C 19.710156 18.683594 20.173469 18.443625 20.355469 18.015625 L 21.947266 18.015625 C 21.689266 19.237625 20.572328 20 18.986328 20 C 17.013328 20 15.851563 18.754344 15.851562 16.652344 C 15.851562 14.544344 17.036891 13.240234 18.962891 13.240234 z M 18.970703 14.550781 C 18.177703 14.550781 17.618547 15.101406 17.560547 15.941406 L 20.320312 15.941406 C 20.284313 15.084406 19.768703 14.550781 18.970703 14.550781 z M 9.7734375 16.095703 L 9.7734375 18.503906 L 11.353516 18.503906 C 12.375516 18.503906 12.927734 18.07325 12.927734 17.28125 C 12.927734 16.50525 12.3575 16.095703 11.3125 16.095703 L 9.7734375 16.095703 z"/></svg>
+                    <span>Behance</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://steamcommunity.com/id/WalMad/', '_blank')" title="Steam">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M 12 2 C 6.82 2 2.5507812 5.95 2.0507812 11 L 7.0195312 13.759766 C 7.5495313 13.289766 8.24 13 9 13 C 9.03 13 9.0500781 13.009766 9.0800781 13.009766 C 9.6800781 12.089766 10.449766 10.919609 11.009766 10.099609 C 11.009766 10.059609 11 10.03 11 10 C 11 8.93 11.419922 7.9299219 12.169922 7.1699219 C 13.679922 5.6599219 16.320078 5.6599219 17.830078 7.1699219 C 18.580078 7.9299219 19 8.93 19 10 C 19 11.07 18.580078 12.070078 17.830078 12.830078 C 17.070078 13.580078 16.07 14 15 14 C 14.97 14 14.930391 13.990234 14.900391 13.990234 C 14.080391 14.550234 12.910234 15.319922 11.990234 15.919922 C 11.990234 15.949922 12 15.97 12 16 C 12 17.66 10.66 19 9 19 C 7.34 19 6 17.66 6 16 C 6 15.83 6.0107812 15.66 6.0507812 15.5 L 2.0898438 13.300781 C 2.7198438 18.210781 6.92 22 12 22 C 17.52 22 22 17.52 22 12 C 22 6.48 17.52 2 12 2 z M 6.0507812 15.5 L 8.5097656 16.869141 C 8.6697656 16.959141 8.83 17 9 17 C 9.35 17 9.6891406 16.810234 9.8691406 16.490234 C 10.139141 16.000234 9.9702344 15.390859 9.4902344 15.130859 L 7.0195312 13.759766 C 6.5095312 14.189766 6.1607813 14.81 6.0507812 15.5 z M 15 8 A 2 2 0 0 0 15 12 A 2 2 0 0 0 15 8 z"/></svg>
+                    <span>Steam</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://open.spotify.com/user/5p9cwtad1zhnngneojjoqontd', '_blank')" title="Spotify">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 50 50" fill="currentColor"><path d="M25.009,1.982C12.322,1.982,2,12.304,2,24.991S12.322,48,25.009,48s23.009-10.321,23.009-23.009S37.696,1.982,25.009,1.982z M34.748,35.333c-0.289,0.434-0.765,0.668-1.25,0.668c-0.286,0-0.575-0.081-0.831-0.252C30.194,34.1,26,33,22.5,33.001 c-3.714,0.002-6.498,0.914-6.526,0.923c-0.784,0.266-1.635-0.162-1.897-0.948s0.163-1.636,0.949-1.897 c0.132-0.044,3.279-1.075,7.474-1.077C26,30,30.868,30.944,34.332,33.253C35.022,33.713,35.208,34.644,34.748,35.333z M37.74,29.193 c-0.325,0.522-0.886,0.809-1.459,0.809c-0.31,0-0.624-0.083-0.906-0.26c-4.484-2.794-9.092-3.385-13.062-3.35 c-4.482,0.04-8.066,0.895-8.127,0.913c-0.907,0.258-1.861-0.272-2.12-1.183c-0.259-0.913,0.272-1.862,1.184-2.12 c0.277-0.079,3.854-0.959,8.751-1c4.465-0.037,10.029,0.61,15.191,3.826C37.995,27.328,38.242,28.388,37.74,29.193z M40.725,22.013 C40.352,22.647,39.684,23,38.998,23c-0.344,0-0.692-0.089-1.011-0.275c-5.226-3.068-11.58-3.719-15.99-3.725 c-0.021,0-0.042,0-0.063,0c-5.333,0-9.44,0.938-9.481,0.948c-1.078,0.247-2.151-0.419-2.401-1.495 c-0.25-1.075,0.417-2.149,1.492-2.4C11.729,16.01,16.117,15,21.934,15c0.023,0,0.046,0,0.069,0 c4.905,0.007,12.011,0.753,18.01,4.275C40.965,19.835,41.284,21.061,40.725,22.013z"/></svg>
+                    <span>Spotify</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://play.google.com/store/apps/developer?id=WaleedAhmad98', '_blank')" title="Google Play">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M 0.5 0 C 0.493 0.016 0.50920312 0.02615625 0.53320312 0.03515625 L 0.5 0 z M 5.4160156 2.328125 L 13.296875 10.535156 L 15.626953 8.109375 C 11.611953 5.838375 6.3020156 2.834125 5.4160156 2.328125 z M 3 2.625 L 3 21.332031 L 11.910156 11.978516 L 3 2.625 z M 17.423828 9.1269531 L 14.683594 11.978516 L 17.402344 14.810547 C 18.148344 14.388547 20.345875 13.182516 22.546875 11.978516 C 20.341875 10.755516 18.145828 9.5359531 17.423828 9.1269531 z M 13.296875 13.423828 L 5.4746094 21.566406 C 6.8216094 20.800406 11.797469 17.982172 15.605469 15.826172 L 13.296875 13.423828 z M 0.484375 23.972656 C 0.465375 23.979656 0.45303125 23.988 0.45703125 24 L 0.484375 23.972656 z"/></svg>
+                    <span>Play Store</span>
+                </div>
+                <div class="icon-link" onclick="window.open('https://www.facebook.com/waleed.ahmad.90', '_blank')" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21,3H3v18h9.621v-6.961h-2.343v-2.725h2.343V9.309c0-2.324,1.421-3.591,3.495-3.591c0.699-0.002,1.397,0.034,2.092,0.105 v2.43h-1.428c-1.13,0-1.35,0.534-1.35,1.322v1.735h2.7l-0.351,2.725h-2.365V21H21V3z"/></svg>
+                    <span>Facebook</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Designed &amp; Built by <span class="accent">Waleed Ahmad</span></p>
+    </footer>
+
 </body>
-
 </html>

@@ -1,14 +1,19 @@
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) =>{
-        console.log(entry)
-        if (entry.isIntersecting){
-            entry.target.classList.add("show");
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
         }
-        else{
-            entry.target.classList.remove("show");
-        }
-    })
-})
+    });
+}, { threshold: 0.1 });
 
-const slideBlurElements = document.querySelectorAll(".animate");
-slideBlurElements.forEach((el) => observer.observe(el));
+document.querySelectorAll('.animate').forEach((el) => observer.observe(el));
+
+// Nav scroll effect
+const topNav = document.getElementById('topNav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+        topNav.style.background = 'rgba(10, 18, 25, 0.95)';
+    } else {
+        topNav.style.background = 'rgba(10, 18, 25, 0.75)';
+    }
+}, { passive: true });
