@@ -519,46 +519,6 @@ body.custom-cursor .icon-link {
 }
 
 /* ============================================================
-   MARQUEE TICKER
-   ============================================================ */
-.marquee {
-    position: relative;
-    overflow: hidden;
-    padding: 1.1rem 0;
-    background: var(--bg-dark);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-    gap: 2.5rem;
-    align-items: center;
-    animation: marqueeScroll 26s linear infinite;
-    will-change: transform;
-}
-
-.marquee-track span {
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    white-space: nowrap;
-}
-
-.marquee-track .dot {
-    color: var(--accent);
-    font-size: 0.65rem;
-}
-
-@keyframes marqueeScroll {
-    from { transform: translate3d(0, 0, 0); }
-    to   { transform: translate3d(-50%, 0, 0); }
-}
-
-/* ============================================================
    SECTION SHELLS
    ============================================================ */
 .dark-section {
