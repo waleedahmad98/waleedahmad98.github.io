@@ -568,6 +568,7 @@ body.custom-cursor .icon-link {
 .sub-section-heading {
     font-size: 1.4rem;
     font-weight: 700;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: var(--text-muted);
 }
