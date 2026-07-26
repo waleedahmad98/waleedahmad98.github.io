@@ -18,6 +18,9 @@ const topNav = document.getElementById('topNav');
 const scrollProgress = document.getElementById('scrollProgress');
 const parallaxLayers = document.querySelectorAll('.parallax-layer');
 const projectImgInners = document.querySelectorAll('.project-img:not(.project-img-multi) .project-img-inner');
+const timeline = document.querySelector('.timeline');
+const timelineProgress = document.getElementById('timelineProgress');
+const timelineItems = document.querySelectorAll('.timeline-item');
 
 let ticking = false;
 
@@ -46,6 +49,21 @@ function updateOnScroll() {
             const move = progress * 36;
             inner.style.transform = `translate3d(0, ${move.toFixed(2)}px, 0)`;
         });
+
+        if (timeline && timelineProgress) {
+            const rect = timeline.getBoundingClientRect();
+            const triggerTop = vh * 0.85;
+            const triggerBottom = vh * 0.35;
+            const span = rect.height + (triggerTop - triggerBottom);
+            const fillProgress = Math.min(Math.max((triggerTop - rect.top) / span, 0), 1);
+            timelineProgress.style.height = `${(fillProgress * 100).toFixed(2)}%`;
+
+            timelineItems.forEach((item) => {
+                const dot = item.querySelector('.timeline-dot');
+                const dotRect = dot.getBoundingClientRect();
+                item.classList.toggle('in-view', dotRect.top < triggerBottom);
+            });
+        }
     }
 
     ticking = false;
